@@ -1,0 +1,164 @@
+:root {
+
+    /* ### Primary */
+
+    --clr-Dark-Blue: hsl(233, 26%, 24%);
+    --Lime-Green: hsl(136, 65%, 51%);
+    --Bright-Cyan: hsl(192, 70%, 51%);
+
+    /* ### Neutral */
+
+    --Grayish-Blue: hsl(233, 8%, 62%);
+    --Light-Grayish-Blue: hsl(220, 16%, 96%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+    --White-: hsl(0, 0%, 100%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 200vh;
+    background-color: var(--Light-Grayish-Blue);
+}
+
+/* =============================================
+$$ Nav $$
+============================================= */
+nav {
+    display: flex;
+    background-color: var(--White-);
+    height: 80px;
+    align-items: center;
+
+    justify-content: center;
+    width: 100%;
+}
+
+.nav-child {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.nav-items {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.uls {
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+}
+
+li a {
+    color: var(--Grayish-Blue);
+    text-decoration: none;
+}
+
+/* .btn {} */
+
+button {
+    width: 180px;
+    height: 45px;
+    border: none;
+    border-radius: 25px;
+    color: var(--White-);
+    background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    font-weight: 700;
+}
+
+/* =============================================
+$$ Nav End $$
+============================================= */
+
+/* =============================================
+$$ Main $$
+ =============================================*/
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* align-items: end; */
+}
+
+.hero {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    height: 85vh;
+    background-color: var(--Very-Light-Gray);
+}
+
+.hero-child {
+    width: 90%;
+    height: 100%;
+    /* background-color: brown; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 50%));
+}
+
+/* =============================================
+$$ Hero img $$
+ =============================================*/
+.hero-img {
+    position: relative;
+    overflow-block: visible;
+    overflow: hidden;
+}
+
+/* .first {
+    /* overflow: hidden; 
+} */
+
+.first-img-hero {
+    position: absolute;
+    left: -59px;
+    top: -220px;
+    height: 168%;
+}
+
+.second {
+    position: absolute;
+    height: 120vh;
+    width: 90%;
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+.second-img-hero {
+    top: -135px;
+    position: absolute;
+    right: -133px;
+    height: 110%;
+}
+
+.ss {
+    overflow: hidden;
+}
+
+/* =============================================
+$$ Hero text $$
+ =============================================*/
+.hero-text {
+    padding-inline: 80px;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+/* =============================================
+$$ Main End $$
+============================================= */
