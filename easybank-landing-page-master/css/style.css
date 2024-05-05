@@ -21,7 +21,7 @@
 }
 
 body {
-    height: 200vh;
+    height: 300vh;
     background-color: var(--Light-Grayish-Blue);
 }
 
@@ -90,7 +90,7 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    /* align-items: end; */
+    align-items: center;
 }
 
 .hero {
@@ -102,7 +102,7 @@ main {
 }
 
 .hero-child {
-    width: 90%;
+    width: 95%;
     height: 100%;
     /* background-color: brown; */
     display: grid;
@@ -135,12 +135,13 @@ $$ Hero img $$
     width: 90%;
     overflow: auto;
     scrollbar-width: none;
+    right: 0px;
 }
 
 .second-img-hero {
     top: -135px;
     position: absolute;
-    right: -133px;
+    right: -105px;
     height: 110%;
 }
 
@@ -152,13 +153,76 @@ $$ Hero img $$
 $$ Hero text $$
  =============================================*/
 .hero-text {
-    padding-inline: 80px;
+    padding-right: 80px;
     display: flex;
     flex-direction: column;
-
     justify-content: center;
 }
 
+.h1 {
+    font-size: clamp(25px, 3vw, 30px);
+}
+
+.h1 h1 {
+    font-weight: 600;
+}
+
+.p {
+    font-size: clamp(18px, 3vw, 20px);
+    line-height: 1.5;
+    padding-block: 30px;
+    color: var(--Grayish-Blue);
+    font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--clr-Dark-Blue);
+}
+
+/* =============================================
+$$ Hero Next $$
+=============================================*/
+.hero-next {
+    width: 90%;
+    padding-block: 100px;
+}
+
+.title-intro {
+    font-size: clamp(20px, 3vw, 30px);
+}
+
+.title-intro h2 {
+    font-weight: 500;
+}
+
+.intro-p {
+    width: 60%;
+}
+
+.next-child-two {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,25%));
+}
+
+.next-two-items {
+    padding-block: 20px;
+    padding-right: 20px;
+    padding-left: 0px;
+}
+
+.next-two-items h3 {
+    font-size: clamp(20px, 3vw, 25px);
+    font-weight: 500;
+}
+.next-two-items img{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
 /* =============================================
 $$ Main End $$
 ============================================= */
