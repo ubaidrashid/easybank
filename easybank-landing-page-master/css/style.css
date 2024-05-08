@@ -61,12 +61,15 @@ nav {
 
 .uls {
     height: 100%;
+    width: 70%;
+}
+.uls ul{
+    height: 100%;
+    align-items: center;
     display: flex;
     justify-content: space-evenly;
-    width: 70%;
-    align-items: center;
-}
 
+}
 li {
     position: relative;
     list-style: none;
@@ -380,11 +383,15 @@ footer {
 }
 
 .lis {
+    font-weight: 200;
+    height: 100%;
+}
+.lis ul{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     height: 100%;
-    font-weight: 200;
+    
 }
 
 .for-btn {
@@ -695,7 +702,7 @@ $$ media querries $$
     .menu{
         display: block;
     }
-    .uls{
+    .uls ul{
         flex-direction: column;
     }
     .uls li{
